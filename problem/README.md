@@ -9,9 +9,6 @@
 
 The C++ standard specifies that a legal (i.e., standard conforming) implementation of deque must satisfy the following requirements:
 
-> deque() - initialize a blank deque.
-> deque(n,x)	- initialize a deque of length n with all values as x.
-
 |Feature         |Description                    |
 |----------------|-------------------------------|
 |deque()         |`initialize a blank deque.`    |
