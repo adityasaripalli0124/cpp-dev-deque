@@ -15,13 +15,13 @@ The C++ standard specifies that a legal (i.e., standard conforming) implementati
 |deque(n, x)     |`initialize a deque of length n with all values as x.`    |
 |push_back(x)    |`append data x at the end.`    |
 |pop_back()      |`erase data at the end.`       |
-|push_front()      |`append data x at the beginning.`       |
+|push_front(x)     |`append data x at the beginning.`       |
 |pop_front()      |`erase data at the beginning.`       |
 |front()      |`Returns the first element(value) in the deque.`       |
 |back()      |`Returns the last element(value) in the deque.`       |
 |empty()      |`Returns true if deque is empty else returns false.`       |
 |size()      |`Returns the current size of deque.`       |
-|resize()      |`Changes the size dynamically. If the new size is greater than the current size of the deque, then fill the empty space with the default value d.`       |
+|resize(s,d,direction)    |`Changes the size dynamically. 's' is the new size of the deque and 'direction' is either 1(forward) or -1(reverse). If the new size is greater than the current size of the deque, then increase the size at the end (if direction is set to 1) or increase the size at the beginning of the deque (if the direction value is set to -1) and then fill the empty space with the default value d. If the new size of the deque is less than the current size then remove elements at the end (if direction = 1) or remove elements at the begining (if direction = -1).`       |
 |clear()      |`Remove all elements of deque.`       |
 |D[n]      |`Returns the nth element of the deque.`       |
 |print()   |`Print all the elements in the deque.`|
