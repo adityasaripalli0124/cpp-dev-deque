@@ -23,7 +23,7 @@ The C++ standard specifies that a legal (i.e., standard conforming) implementati
 |size()      |`Returns the current size of deque.`       |
 |resize(s,d,direction)    |`Changes the size dynamically. 's' is the new size of the deque and 'direction' is either 1(forward) or -1(reverse). If the new size is greater than the current size of the deque, then increase the size at the end (if direction is set to 1) or increase the size at the beginning of the deque (if the direction value is set to -1) and then fill the empty space with the default value d. If the new size of the deque is less than the current size then remove elements at the end (if direction = 1) or remove elements at the begining (if direction = -1).`       |
 |clear()      |`Remove all elements of deque.`       |
-|D[n]      |`Returns the nth element of the deque.`       |
+|D[n]      |`Returns the nth element of the deque. If n<0 then traverse the deque in reverse. Eg: D[-1] = last element.`       |
 |print()   |`Print all the elements in the deque.`|
 
 
